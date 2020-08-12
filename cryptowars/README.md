@@ -1,0 +1,3 @@
+# cryptowars
+
+To play
