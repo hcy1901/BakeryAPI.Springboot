@@ -11,4 +11,4 @@ npm run serve
 
 Then go to http://127.0.0.1:8080/ to play the game!
 
-The game cl
+The game client will need to make Raiden payments on your behalf, so you need to run Raid
