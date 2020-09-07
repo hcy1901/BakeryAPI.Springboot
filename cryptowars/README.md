@@ -17,4 +17,7 @@ Currently, the game server runs on Raiden version `raiden-v0.18.1.dev57+g786347b
 Start your local Raiden node with:
 
 ```
-./raiden-v0.18.1.dev57+g786347b2-macOS --network-id kovan --environment-type development --accept-disclaimer --gas-price 20000000000 --eth-rpc-endpoint "https://kovan.infura.io/v3/ebca4c2a0f4b4cf9ba4669ac26d3dde2" --log-config "raiden:debug" --keystore-path ~/Library/Ethereum/kovan/keystore --rpccorsdomain http://127.0.0.1:8080,http://localhost:*/* --api-address http://127.0.0.1
+./raiden-v0.18.1.dev57+g786347b2-macOS --network-id kovan --environment-type development --accept-disclaimer --gas-price 20000000000 --eth-rpc-endpoint "https://kovan.infura.io/v3/ebca4c2a0f4b4cf9ba4669ac26d3dde2" --log-config "raiden:debug" --keystore-path ~/Library/Ethereum/kovan/keystore --rpccorsdomain http://127.0.0.1:8080,http://localhost:*/* --api-address http://127.0.0.1:5010
+```
+
+May the tokens be with you!
