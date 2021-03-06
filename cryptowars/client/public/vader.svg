@@ -23,4 +23,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs12" /><sodipodi:namedview
      pagecolor="#ffffff"
-     bordercol
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtoler
