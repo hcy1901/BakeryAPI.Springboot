@@ -26,4 +26,7 @@
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
-     gridtoler
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pa
