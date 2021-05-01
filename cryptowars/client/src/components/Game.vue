@@ -46,3 +46,69 @@
             class="nav next"
             slot="button-next"
         >
+            <v-icon>fa-chevron-right</v-icon>
+        </v-btn> -->
+  </div>
+
+    </swiper>
+</template>
+
+<script>
+import Vue from 'vue';
+import VueAwesomeSwiper from 'vue-awesome-swiper';
+import 'swiper/dist/css/swiper.css';
+
+import StartPage from './StartPage';
+import GameOpen from './GameOpen';
+import GameClosed from './GameClosed';
+import GameEnd from './GameEnd';
+import { MovesToIndex, IndexToMoves, GameGuardian, GameState, GameStateIndex, Network } from '../constants';
+import { UserRaidenApi, GuardianApi } from '../utils';
+
+Vue.use(VueAwesomeSwiper);
+
+const web3Utils = require('web3-utils');
+
+
+export default {
+    props: ['userInfo'],
+    components: {
+        StartPage,
+        GameOpen,
+        GameClosed,
+        GameEnd,
+    },
+    data() {
+        return {
+            swiperOptions: {
+                noSwiping: true,
+                navigation: {
+                    nextEl: '.next',
+                    prevEl: '.prev',
+                },
+                noSwipingClass: "no-swipe",
+                loop: false,
+                slidesPerView: "auto",
+            },
+            userRaidenApi: null,
+            guardianApi: new GuardianApi(
+                Vue.axios,
+                GameGuardian.host,
+            ),
+            player: null,
+            game: null,
+            gameState: GameState.null,
+            move: null,
+            timer: {intervalGame: 0, intervalResolve: 0, value: 0},
+            raiden_payment: null,
+            winningPayment: null,
+            moveStarted: null,
+            secret: null,
+        }
+    },
+    computed: {
+        swiper() {
+            return this.$refs.mySwiper.swiper
+        },
+    },
+    watch: {
