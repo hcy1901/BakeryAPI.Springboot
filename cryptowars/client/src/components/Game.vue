@@ -203,3 +203,90 @@ export default {
                 this.paymentIdentifier = response.data.paymentIdentifier;
             });
         },
+        setPlayer(index) {
+            this.player = index;
+            console.log('this.player', this.player);
+        },
+        setMove(index) {
+            this.move = index;
+            console.log('this.move', this.move);
+        },
+        getSecret() {
+            return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+        },
+        getMoveHash() {
+            const secret = this.getSecret();
+
+            if (!this.player) throw new Error('Cannot send move. No player was chosen.');
+            if (!this.move) throw new Error('Cannot send move. No move was chosen.');
+            if (!this.game._id) throw new Error('Cannot send move. No game._id.');
+            if (!secret) throw new Error('Cannot send move. No secret was chosen.');
+            this.secret = secret;
+            return web3Utils.soliditySha3(this.userInfo.address, this.game._id, this.player, IndexToMoves[this.move], GameGuardian.amount, secret);
+        },
+        setCurrentGame() {
+            return this.guardianApi.getGame().then((response) => {
+                let deltaTime;
+                const game = response.data[0];
+                this.game = game;
+
+                deltaTime = new Date().getTime() - new Date(game.startTime).getTime();
+                this.timer.intervalGame = game.gameTime;
+                this.timer.intervalResolve = game.gameTime + game.resolveTime;
+                this.timer.value = new Date(game.startTime).getTime();
+
+                console.log('setCurrentGame', game);
+                console.log('this.timer', this.timer);
+
+                if (deltaTime < game.gameTime) {
+                    // We are during game time, users can make moves
+                    this.gameState = GameState.open;
+                } else if (deltaTime < (game.gameTime + game.resolveTime)) {
+                    // We are during the game resolution time, users wait for results and payments
+                    this.gameState = GameState.closed;
+                    this.wait = this.timer.intervalResolve - deltaTime;
+                    console.log('wait', this.wait);
+                } else {
+                    // Game and resolution has ended.
+                    // We query for a new game
+                    // setTimeout(this.setCurrentGame, 2000);
+                    this.gameState = GameState.resolved;
+                }
+                console.log('gameState', GameStateIndex[this.gameState]);
+            });
+        },
+        startGame() {
+            return this.guardianApi.startGame();
+        },
+        gameTimerEnd() {
+            console.log('gameTimerEnd');
+            // If a move was sent go to the next step
+            // Go back to start if the game was not played
+            if (!this.raiden_payment) {
+                this.swiper.slideTo(0, 1000, false);
+            } else {
+                // Just in case the next step slide did not work after the payment was made
+                if (this.swiper.realIndex == 1) {
+                    this.swiper.slideNext(1000, false);
+                }
+                // Send the move data to the guardian server
+                this.guardianApi.revealMove(this.moveStarted._id, {
+                    move: IndexToMoves[this.move],
+                    secret: this.secret,
+                    amount: GameGuardian.amount,
+                }).then((response) => {
+                    console.log('revealMove', response);
+                }).catch(alert);
+            }
+        },
+        resolveTimerEnd() {
+            console.log('resolveTimerEnd');
+            // get winning move from the server and show it in GameClosed
+            // (remove next game timer from last page; maybe have one on the first page)
+            this.guardianApi.revealGame(this.game._id)
+                .then((response) => {
+                    let game = response.data;
+                    if (!game) throw new Error(`Game not found ${this.game._id}`);
+                    if (game.inProgress || !game.winningMove) {
+                        setTimeout(this.resolveTimerEnd, 2000);
+                        return;
