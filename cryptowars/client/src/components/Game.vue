@@ -290,3 +290,90 @@ export default {
                     if (game.inProgress || !game.winningMove) {
                         setTimeout(this.resolveTimerEnd, 2000);
                         return;
+                    }
+                    this.game = game;
+                    this.getWinningPayment().then(() => {
+                        // Do one retry in 4 sec.
+                        if (!this.winningPayment) {
+                            setTimeout(() => {
+                                console.log('Retrying getWinningPayment');
+                                this.getWinningPayment().then(() => {
+                                    if (!this.winningPayment) {
+                                        this.winningPayment = 'Could not find Raiden payment.';
+                                    }
+                                })
+                            }, 4000);
+                        }
+                    });
+                }).catch(alert);
+        },
+        getWinningPayment() {
+            return this.userRaidenApi.payments().then((response) => {
+                let payments = response.data.filter((payment) => {
+                    return payment.initiator === GameGuardian.raiden_address[Network];
+                });
+                console.log('payments', payments);
+                const lastPaymentReceived = payments.pop();
+                console.log('lastPaymentReceived', lastPaymentReceived);
+                console.log('this.raiden_payment', this.raiden_payment);
+                if (lastPaymentReceived && lastPaymentReceived.identifier === this.raiden_payment.identifier) {
+                    this.winningPayment = lastPaymentReceived;
+                    console.log('winningPayment set');
+                }
+            });
+        },
+    }
+}
+</script>
+
+<style>
+html, body {
+    margin: 0;
+}
+.margin {
+    margin: auto;
+    padding-bottom: 10px;
+}
+.menu{
+    position:fixed!important;
+    top:3px!important;
+}
+.menu.help {
+    right: 3px!important;
+}
+
+.swiper-margin {
+    margin: 0;
+}
+.swiper-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.swiper-slide {
+    width: 100%!important;
+}
+/* .swiper-slide:nth-child(2n), .swiper-slide:nth-child(4n) {
+    width: 70%!important;
+}
+.swiper-slide:nth-child(3n), .swiper-slide:nth-child(5n) {
+    width: 30%!important;
+    overflow-y: scroll;
+} */
+.fullheight, .v-window, .v-window__container {
+    height: 100%;
+}
+.v-tabs__items {
+    height: 100%;
+}
+
+.nav{
+    position:fixed!important;
+    top:3px!important;
+}
+.nav.prev {
+    left: 163px!important;
+}
+.nav.next {
+    right: 163px!important;
