@@ -377,3 +377,5 @@ html, body {
 }
 .nav.next {
     right: 163px!important;
+}
+</style>
