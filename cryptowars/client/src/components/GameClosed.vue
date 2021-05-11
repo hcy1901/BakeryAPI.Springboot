@@ -8,4 +8,5 @@
                     <v-icon x-large>{{ `fa-hand-${winningMove}` }}</v-icon>
                 </v-btn>
                 <p class="display-2">{{ `You ${MovesToIndex[winningMove] === move ? 'won!': 'lost..'}`}}</p>
-                <p
+                <p class="subheading" v-if="MovesToIndex[winningMove] === move">
+                    {{`You
