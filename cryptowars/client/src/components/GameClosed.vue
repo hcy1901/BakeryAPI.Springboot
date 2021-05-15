@@ -10,4 +10,7 @@
                 <p class="display-2">{{ `You ${MovesToIndex[winningMove] === move ? 'won!': 'lost..'}`}}</p>
                 <p class="subheading" v-if="MovesToIndex[winningMove] === move">
                     {{`You should receive ${parseFloat(game.amount / 10**18).toFixed(13)} WETH`}}
-     
+                </p>
+            </v-flex>
+            <v-flex xs12>
+          
