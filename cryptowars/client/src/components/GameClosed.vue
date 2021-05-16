@@ -15,4 +15,6 @@
             <v-flex xs12>
                 <div class="subheading">Your choices: </div>
             </v-flex>
-   
+            <GameClosedChoices :player="player" :move="move"/>
+
+            <v-flex 
