@@ -17,4 +17,8 @@
             </v-flex>
             <GameClosedChoices :player="player" :move="move"/>
 
-            <v-flex 
+            <v-flex xs12>
+                <div class="subheading">Opponent's choices: </div>
+            </v-flex>
+            <GameClosedChoices
+                :player="oppo
