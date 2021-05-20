@@ -21,4 +21,7 @@
                 <div class="subheading">Opponent's choices: </div>
             </v-flex>
             <GameClosedChoices
-                :player="oppo
+                :player="opponent()"
+                :move="opponentMove"
+                :timer="timer"
+                v-on
