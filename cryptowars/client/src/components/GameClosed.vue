@@ -27,4 +27,6 @@
                 v-on:timer-end="$emit('timer-end')"
             />
 
-            <v-flex xs12 v-if="winningP
+            <v-flex xs12 v-if="winningPayment">
+                <div v-if="MovesToIndex[winningMove] === move">
+          
