@@ -24,4 +24,7 @@
                 :player="opponent()"
                 :move="opponentMove"
                 :timer="timer"
-                v-on
+                v-on:timer-end="$emit('timer-end')"
+            />
+
+            <v-flex xs12 v-if="winningP
