@@ -32,4 +32,5 @@
                     <p class="subheading">
                         {{`You won ${parseFloat(winningPayment.amount / 10**18).toFixed(13)} WETH.`}}
                     </p>
-        
+                    <p class="subheading">
+                        {{displayWinnin
