@@ -36,4 +36,7 @@
                         {{displayWinningPayment()}}
                     </p>
                 </div>
-                <v-b
+                <v-btn
+                    large round
+                    v-on:click="$emit('restart-game')"
+     
