@@ -39,4 +39,7 @@
                 <v-btn
                     large round
                     v-on:click="$emit('restart-game')"
-     
+                >Play again!</v-btn>
+            </v-flex>
+        </v-layout>
+    </v-container>
