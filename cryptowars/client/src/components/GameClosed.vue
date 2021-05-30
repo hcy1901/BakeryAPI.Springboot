@@ -52,4 +52,7 @@ import Timer from './Timer';
 
 export default {
     components: {
-        Ga
+        GameClosedChoices,
+        Timer,
+    },
+    props: ['game', 'timer', 'pl
