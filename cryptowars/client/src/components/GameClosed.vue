@@ -48,4 +48,8 @@
 <script>
 import { IndexToPlayer, MovesToIndex, GameGuardian, Network } from '../constants';
 import GameClosedChoices from './GameClosedChoices';
-impo
+import Timer from './Timer';
+
+export default {
+    components: {
+        Ga
