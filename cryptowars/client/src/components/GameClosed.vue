@@ -46,4 +46,6 @@
 </template>
 
 <script>
-import { IndexToPlayer, MovesToIndex, GameGuard
+import { IndexToPlayer, MovesToIndex, GameGuardian, Network } from '../constants';
+import GameClosedChoices from './GameClosedChoices';
+impo
