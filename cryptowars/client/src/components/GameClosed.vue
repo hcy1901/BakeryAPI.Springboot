@@ -55,4 +55,7 @@ export default {
         GameClosedChoices,
         Timer,
     },
-    props: ['game', 'timer', 'pl
+    props: ['game', 'timer', 'player', 'move', 'winningPayment'],
+    data: () => ({
+        IndexToPlayer,
+        Moves
