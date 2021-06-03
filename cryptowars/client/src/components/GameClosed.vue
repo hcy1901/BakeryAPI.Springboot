@@ -58,4 +58,9 @@ export default {
     props: ['game', 'timer', 'player', 'move', 'winningPayment'],
     data: () => ({
         IndexToPlayer,
-        Moves
+        MovesToIndex,
+        winningMove: null,
+        opponentMove: null,
+    }),
+    watch: {
+     
