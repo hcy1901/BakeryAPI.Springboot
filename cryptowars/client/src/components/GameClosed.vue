@@ -66,4 +66,9 @@ export default {
         game() {
             let opponentMove = this.game[`move${this.opponent()}`];
             if (opponentMove) this.opponentMove = MovesToIndex[opponentMove];
-            if (this.game.winningMove) this.winningMove = this.game.winni
+            if (this.game.winningMove) this.winningMove = this.game.winningMove;
+        }
+    },
+    methods: {
+        opponent() {
+            return this.play
