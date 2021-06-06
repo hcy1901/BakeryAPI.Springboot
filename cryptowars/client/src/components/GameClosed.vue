@@ -64,4 +64,5 @@ export default {
     }),
     watch: {
         game() {
-            let opponentMove = this.game[`move${this.opponent()}
+            let opponentMove = this.game[`move${this.opponent()}`];
+            if (opponentMove) this.opponentMove = MovesToIndex[opponentMov
