@@ -63,4 +63,5 @@ export default {
         opponentMove: null,
     }),
     watch: {
-     
+        game() {
+            let opponentMove = this.game[`move${this.opponent()}
