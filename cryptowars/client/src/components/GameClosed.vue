@@ -71,4 +71,7 @@ export default {
     },
     methods: {
         opponent() {
-            return this.play
+            return this.player ? (3 - this.player) : null;
+        },
+        displayWinningPayment() {
+ 
