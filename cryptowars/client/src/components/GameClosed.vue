@@ -74,4 +74,5 @@ export default {
             return this.player ? (3 - this.player) : null;
         },
         displayWinningPayment() {
- 
+            if (typeof this.winningPayment === 'string') {
+                return this.winning
