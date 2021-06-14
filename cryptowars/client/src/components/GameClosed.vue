@@ -75,4 +75,6 @@ export default {
         },
         displayWinningPayment() {
             if (typeof this.winningPayment === 'string') {
-                return this.winning
+                return this.winningPayment;
+            }
+            return `Guardian ${GameGuardian.raiden_address[Network]} sent yo
