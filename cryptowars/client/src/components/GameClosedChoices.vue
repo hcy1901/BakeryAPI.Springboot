@@ -36,3 +36,9 @@ export default {
         Timer,
     },
     props: ['timer', 'player', 'move'],
+    data: () => ({
+        IndexToPlayer,
+        IndexToMoves,
+    }),
+}
+</script>
