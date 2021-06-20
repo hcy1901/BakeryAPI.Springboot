@@ -77,4 +77,8 @@ export default {
             if (typeof this.winningPayment === 'string') {
                 return this.winningPayment;
             }
-            return `Guardian ${GameGuardian.raiden_address[Network]} sent you a micropayment with identifier ${this.winningPayment.identifier} at log_time ${this.winnin
+            return `Guardian ${GameGuardian.raiden_address[Network]} sent you a micropayment with identifier ${this.winningPayment.identifier} at log_time ${this.winningPayment.log_time}.`
+        }
+    }
+}
+</script>
