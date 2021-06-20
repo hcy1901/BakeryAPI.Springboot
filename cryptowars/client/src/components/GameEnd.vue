@@ -2,4 +2,10 @@
     <div>
         Game Over.
         {{ move }} won.
-        {{ amount }}
+        {{ amount }} raised.
+        {{ players }} played.
+    </div>
+</template>
+
+<script>
+expor
