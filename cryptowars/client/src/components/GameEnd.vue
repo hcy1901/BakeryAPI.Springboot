@@ -8,4 +8,7 @@
 </template>
 
 <script>
-expor
+export default {
+    props: ['move', 'amount','players'],
+}
+</script>
