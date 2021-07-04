@@ -108,3 +108,27 @@ export default {
     mounted() {
         this.ip = '127.0.0.1:5001';
     },
+    watch: {
+        infoRequired() {
+            if (this.infoRequired) {
+                this.dialog = true;
+            }
+        },
+    },
+    methods: {
+        closeDialog() {
+            if(this.address && this.ip) {
+                this.dialog = false;
+            }
+        },
+        updateInfo() {
+            if(this.address && this.ip) {
+                this.$emit('set-info', {
+                    address: this.address,
+                    ip: `http://${this.ip}`,
+                });
+            }
+        }
+    }
+}
+</script>
