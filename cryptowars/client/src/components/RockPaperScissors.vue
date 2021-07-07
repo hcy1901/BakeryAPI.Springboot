@@ -6,4 +6,8 @@
                 large fab
             >
                 <v-icon light x-large>fa-hand-rock</v-icon>
-            </v-
+            </v-btn>
+        </v-flex>
+        <v-flex xs4>
+            <v-btn
+                v-on:click.s
