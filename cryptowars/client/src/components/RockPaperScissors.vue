@@ -10,4 +10,6 @@
         </v-flex>
         <v-flex xs4>
             <v-btn
-                v-on:click.s
+                v-on:click.stop="$emit('move-chosen', MovesToIndex.paper)"
+                large fab
+         
