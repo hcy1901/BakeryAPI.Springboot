@@ -18,4 +18,5 @@
         </v-flex>
         <v-flex xs4>
             <v-btn
-  
+                v-on:click.stop="$emit('move-chosen', MovesToIndex.scissors)"
+          
