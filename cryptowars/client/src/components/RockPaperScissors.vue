@@ -21,4 +21,6 @@
                 v-on:click.stop="$emit('move-chosen', MovesToIndex.scissors)"
                 large fab
             >
-                <v-icon light x-large class="f
+                <v-icon light x-large class="fa-rotate-90">fa-hand-scissors</v-icon>
+            </v-btn>
+ 
