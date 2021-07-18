@@ -23,4 +23,9 @@
             >
                 <v-icon light x-large class="fa-rotate-90">fa-hand-scissors</v-icon>
             </v-btn>
- 
+        </v-flex>
+    </v-layout>
+</template>
+
+<script>
+import { MovesToIndex } from '../
