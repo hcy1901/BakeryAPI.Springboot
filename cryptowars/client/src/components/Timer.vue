@@ -5,4 +5,7 @@
             :size="size"
             :width="15"
             :value="value"
-            :c
+            :color="color"
+        >
+            {{ getTimeLeft(value) }}
+        </v-progress
