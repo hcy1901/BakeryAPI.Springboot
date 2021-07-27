@@ -8,4 +8,12 @@
             :color="color"
         >
             {{ getTimeLeft(value) }}
-        </v-progress
+        </v-progress-circular>
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+        time: {
+    
