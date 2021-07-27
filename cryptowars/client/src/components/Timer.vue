@@ -16,4 +16,7 @@
 export default {
     props: {
         time: {
-    
+            type: Number,
+            default: 0,
+        },
+        color: 
