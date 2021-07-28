@@ -19,4 +19,9 @@ export default {
             type: Number,
             default: 0,
         },
-        color: 
+        color: {
+            type: String,
+            default: 'black',
+        },
+        startValue: {
+            t
