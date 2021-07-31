@@ -24,4 +24,8 @@ export default {
             default: 'black',
         },
         startValue: {
-            t
+            type: Number,
+            default: 0,
+        },
+        size: {
+  
