@@ -28,4 +28,9 @@ export default {
             default: 0,
         },
         size: {
-  
+            type: String,
+            default: "100",
+        }
+    },
+    data() {
+        retur
