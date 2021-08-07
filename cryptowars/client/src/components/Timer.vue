@@ -33,4 +33,8 @@ export default {
         }
     },
     data() {
-        retur
+        return {
+            value: 0,
+            interval: null,
+            intervalTime: 1000,
+       
