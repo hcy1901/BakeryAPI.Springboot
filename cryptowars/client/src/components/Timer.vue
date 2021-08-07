@@ -43,4 +43,9 @@ export default {
         this.clearInterval();
     },
     mounted() {
-        this.
+        this.clearInterval();
+        this.setValue();
+        this.setTimer();
+    },
+    watch: {
+    
