@@ -51,3 +51,8 @@ export default {
         startValue() {
             this.clearInterval();
             this.setValue();
+            this.setTimer();
+        }
+    },
+    methods: {
+        setValue() 
