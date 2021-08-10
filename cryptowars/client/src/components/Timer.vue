@@ -55,4 +55,6 @@ export default {
         }
     },
     methods: {
-        setValue() 
+        setValue() {
+            this.value = this.msecondsToValue(new Date().getTime() - this.startValue);
+   
