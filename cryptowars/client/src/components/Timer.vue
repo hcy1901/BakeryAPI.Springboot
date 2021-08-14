@@ -57,4 +57,7 @@ export default {
     methods: {
         setValue() {
             this.value = this.msecondsToValue(new Date().getTime() - this.startValue);
-            // console.log('setValue', this.value, this.startValue, this.formatTime(th
+            // console.log('setValue', this.value, this.startValue, this.formatTime(this.startValue));
+        },
+        msecondsToValue(mseconds=0) {
+            retu
