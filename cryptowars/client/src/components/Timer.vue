@@ -60,4 +60,6 @@ export default {
             // console.log('setValue', this.value, this.startValue, this.formatTime(this.startValue));
         },
         msecondsToValue(mseconds=0) {
-            retu
+            return this.time === 0 ? 0 : 100 * mseconds / this.time;
+        },
+        valueToM
