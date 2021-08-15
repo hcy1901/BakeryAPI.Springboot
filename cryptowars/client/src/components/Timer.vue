@@ -62,4 +62,7 @@ export default {
         msecondsToValue(mseconds=0) {
             return this.time === 0 ? 0 : 100 * mseconds / this.time;
         },
-        valueToM
+        valueToMseconds(value) {
+            return value * this.time / 100;
+        },
+        setTi
