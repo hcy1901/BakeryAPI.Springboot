@@ -68,4 +68,7 @@ export default {
         setTimer() {
             if (!this.time) return;
 
-            this.valueIncrement = 100 * t
+            this.valueIncrement = 100 * this.intervalTime / this.time;
+
+            this.interval = setInterval(() => {
+              
