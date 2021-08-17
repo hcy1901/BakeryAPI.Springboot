@@ -65,4 +65,7 @@ export default {
         valueToMseconds(value) {
             return value * this.time / 100;
         },
-        setTi
+        setTimer() {
+            if (!this.time) return;
+
+            this.valueIncrement = 100 * t
