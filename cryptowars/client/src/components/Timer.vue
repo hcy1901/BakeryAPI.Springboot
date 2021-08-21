@@ -71,4 +71,6 @@ export default {
             this.valueIncrement = 100 * this.intervalTime / this.time;
 
             this.interval = setInterval(() => {
-              
+                if (this.value >= 100) {
+                    this.$emit('timer-end');
+ 
