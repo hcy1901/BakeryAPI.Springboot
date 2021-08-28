@@ -80,4 +80,7 @@ export default {
             }, this.intervalTime);
         },
         clearInterval() {
-            if (this.interval) c
+            if (this.interval) clearInterval(this.interval);
+        },
+        getTimeLeft: function(value) {
+      
