@@ -83,4 +83,5 @@ export default {
             if (this.interval) clearInterval(this.interval);
         },
         getTimeLeft: function(value) {
-      
+            let mseconds = this.valueToMseconds(value || this.value);
+            return t
