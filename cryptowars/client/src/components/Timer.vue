@@ -88,4 +88,5 @@ export default {
         },
         formatTime: (mseconds) => {
             let seconds = Math.max(Math.floor(mseconds / 1000), 0);
-            let minutes = M
+            let minutes = Math.max(Math.floor(seconds / 60), 0);
+            return `${minutes > 0 
