@@ -20,3 +20,12 @@ export const PlayerToIndex = {
 export const IndexToPlayer = {
     1: 'vader',
     2: 'yoda',
+}
+
+export const MovesToIndex = {
+    rock: 1,
+    paper: 2,
+    scissors: 3,
+}
+
+exp
