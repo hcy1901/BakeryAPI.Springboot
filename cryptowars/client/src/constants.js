@@ -8,4 +8,10 @@ export const GameState = {
 export const GameStateIndex = {
     0: 'null',
     1: 'open',
-    2: 'cl
+    2: 'closed',
+    3: 'resolved',
+}
+
+export const PlayerToIndex = {
+    vader: 1,
+    yo
