@@ -14,4 +14,9 @@ export const GameStateIndex = {
 
 export const PlayerToIndex = {
     vader: 1,
-    yo
+    yoda: 2,
+}
+
+export const IndexToPlayer = {
+    1: 'vader',
+    2: 'yoda',
