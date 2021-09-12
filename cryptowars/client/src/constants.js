@@ -34,4 +34,6 @@ export const IndexToMoves = {
     3: 'scissors',
 }
 
-export
+export const GameGuardian = {
+    host: process.env.VUE_APP_GUARDIAN_HOST,
+    raide
