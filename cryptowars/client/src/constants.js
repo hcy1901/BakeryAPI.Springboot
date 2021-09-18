@@ -42,4 +42,9 @@ export const GameGuardian = {
     },
     token_address: {
         3: process.env.VUE_APP_GUARDIAN_TOKEN_ADDRESS_ROPSTEN,
-        42: process.env.VUE_APP_GU
+        42: process.env.VUE_APP_GUARDIAN_TOKEN_ADDRESS_KOVAN,
+    },
+    amount: 100000,
+}
+
+export const Network = 
