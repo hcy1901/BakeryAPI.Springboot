@@ -47,4 +47,4 @@ export const GameGuardian = {
     amount: 100000,
 }
 
-export const Network = 
+export const Network = process.env.VUE_APP_NETWORK;
