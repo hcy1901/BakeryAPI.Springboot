@@ -1,2 +1,5 @@
 import Vue from 'vue'
-impor
+import Vuetify from 'vuetify/lib'
+import 'vuetify/src/stylus/app.styl'
+
+Vue.use(Vueti
