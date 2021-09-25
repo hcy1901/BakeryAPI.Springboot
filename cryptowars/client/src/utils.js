@@ -13,4 +13,4 @@ export class UserRaidenApi {
     }
 
     history(fromBlock=0) {
-        const api =  `
+        const api =  `${this.ip}/api/v1/events/channels/${this.token}/${this.target}?from_bl
