@@ -9,4 +9,8 @@ export class UserRaidenApi {
     pay(payload) {
         const api = `${this.ip}/api/v1/payments/${this.token}/${this.target}`;
         console.log('pay', api, payload);
-        return this.axios.post
+        return this.axios.post(api, payload);
+    }
+
+    history(fromBlock=0) {
+        const api =  `
