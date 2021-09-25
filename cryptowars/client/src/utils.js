@@ -7,4 +7,5 @@ export class UserRaidenApi {
     }
 
     pay(payload) {
-        const
+        const api = `${this.ip}/api/v1/payments/${this.token}/${this.target}`;
+   
