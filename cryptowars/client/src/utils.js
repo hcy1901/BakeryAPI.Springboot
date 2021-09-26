@@ -19,4 +19,10 @@ export class UserRaidenApi {
     }
 
     payments() {
-        const api = `${this.ip}/api/v1/payments/${t
+        const api = `${this.ip}/api/v1/payments/${this.token}`;
+        return this.axios.get(api);
+    }
+}
+
+export class GuardianApi {
+    cons
