@@ -15,4 +15,8 @@ export class UserRaidenApi {
     history(fromBlock=0) {
         const api =  `${this.ip}/api/v1/events/channels/${this.token}/${this.target}?from_block=${fromBlock}`;
         console.log('history', api);
-        return this.axios.g
+        return this.axios.get(api);
+    }
+
+    payments() {
+        const api = `${this.ip}/api/v1/payments/${t
