@@ -25,4 +25,6 @@ export class UserRaidenApi {
 }
 
 export class GuardianApi {
-    cons
+    constructor(axios, ip) {
+        this.axios = axios;
+        this.ip = i
