@@ -27,4 +27,8 @@ export class UserRaidenApi {
 export class GuardianApi {
     constructor(axios, ip) {
         this.axios = axios;
-        this.ip = i
+        this.ip = ip;
+    }
+
+    getGame() {
+        const api = `${this.ip}/game?filter={"offset":0,"limit":1,"skip"
