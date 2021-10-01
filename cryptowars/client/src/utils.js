@@ -31,4 +31,8 @@ export class GuardianApi {
     }
 
     getGame() {
-        const api = `${this.ip}/game?filter={"offset":0,"limit":1,"skip"
+        const api = `${this.ip}/game?filter={"offset":0,"limit":1,"skip":0,"order":"startTime%20DESC"}`;
+        return this.axios.get(api);
+    }
+
+    startGam
