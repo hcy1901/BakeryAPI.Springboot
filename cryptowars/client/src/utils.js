@@ -40,4 +40,6 @@ export class GuardianApi {
         return this.axios.post(api, {});
     }
 
- 
+    revealGame(gameid) {
+        const api = `${this.ip}/game/${gameid}`;
+  
