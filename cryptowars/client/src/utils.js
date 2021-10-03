@@ -42,4 +42,7 @@ export class GuardianApi {
 
     revealGame(gameid) {
         const api = `${this.ip}/game/${gameid}`;
-  
+        return this.axios.get(api, {});
+    }
+
+    initMove(ga
