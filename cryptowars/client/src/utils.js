@@ -35,4 +35,9 @@ export class GuardianApi {
         return this.axios.get(api);
     }
 
-    startGam
+    startGame() {
+        const api = `${this.ip}/game`;
+        return this.axios.post(api, {});
+    }
+
+ 
