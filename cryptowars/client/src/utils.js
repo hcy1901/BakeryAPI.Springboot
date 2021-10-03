@@ -45,4 +45,6 @@ export class GuardianApi {
         return this.axios.get(api, {});
     }
 
-    initMove(ga
+    initMove(gameid, move) {
+        const api = `${this.ip}/game/${gameid}/move`;
+        return this.
