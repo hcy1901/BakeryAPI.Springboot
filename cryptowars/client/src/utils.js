@@ -51,4 +51,7 @@ export class GuardianApi {
     }
 
     revealMove(moveid, move) {
-        const api = `${this.ip}/move/${
+        const api = `${this.ip}/move/${moveid}`;
+        return this.axios.patch(api, move);
+    }
+}
