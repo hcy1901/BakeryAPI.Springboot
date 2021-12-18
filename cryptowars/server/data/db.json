@@ -27,4 +27,5 @@
       "20": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2019-06-21T11:11:55.476Z\",\"inProgress\":false,\"_id\":20}",
       "21": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2019-06-21T11:20:47.750Z\",\"inProgress\":false,\"_id\":21,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"paper\",\"amount\":90000,\"players\":1}",
       "22": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2019-06-21T14:24:43.527Z\",\"inProgress\":false,\"_id\":22,\"winningMove\":\"paper\",\"move1\":\"paper\",\"move2\":\"rock\",\"amount\":90000,\"players\":1}",
-      "23": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2019-06-21T14:28:12.254Z\",\"inProgress\":false,\"_id\":23,\"winningMove\":\"scissors\",\"move1\":null,\"move2\":\"scissors\",\"amount\":90000,\"players\":1}"
+      "23": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2019-06-21T14:28:12.254Z\",\"inProgress\":false,\"_id\":23,\"winningMove\":\"scissors\",\"move1\":null,\"move2\":\"scissors\",\"amount\":90000,\"players\":1}",
+      "24": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2019-0
