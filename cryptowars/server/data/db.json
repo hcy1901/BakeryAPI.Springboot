@@ -38,4 +38,5 @@
       "31": "{\"gameTime\":10000,\"resolveTime\":2000,\"startTime\":\"2019-07-01T16:23:53.691Z\",\"inProgress\":false,\"_id\":31,\"winningMove\":null,\"move1\":null,\"amount\":0,\"players\":1}",
       "32": "{\"gameTime\":10000,\"resolveTime\":2000,\"startTime\":\"2019-07-01T16:24:10.390Z\",\"inProgress\":false,\"_id\":32}",
       "33": "{\"gameTime\":10000,\"resolveTime\":2000,\"startTime\":\"2019-07-01T16:24:24.593Z\",\"inProgress\":false,\"_id\":33,\"winningMove\":null,\"move1\":null,\"amount\":0,\"players\":1}",
-      "34": "{\"gameTime\":10000,\"resolveTime\":2000,\"startTime\":\"2019-07-01
+      "34": "{\"gameTime\":10000,\"resolveTime\":2000,\"startTime\":\"2019-07-01T16:24:42.459Z\",\"inProgress\":false,\"_id\":34}",
+      "35": "{\"gameTi
