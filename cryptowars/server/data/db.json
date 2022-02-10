@@ -45,4 +45,4 @@
       "38": "{\"gameTime\":20000,\"resolveTime\":2000,\"startTime\":\"2019-07-02T01:42:53.554Z\",\"inProgress\":false,\"_id\":38}"
     },
     "Move": {
-      "1": "{\"playerId\":\"1\",\"gameId\"
+      "1": "{\"playerId\":\"1\",\"gameId\":\"1\",\"userAddress\":\"0xbB5AEb01acF5b75bc36eC01f5137Dd2728FbE983\",\"moveHash\":\"
