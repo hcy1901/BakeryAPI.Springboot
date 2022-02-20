@@ -49,4 +49,4 @@
       "2": "{\"playerId\":\"1\",\"gameId\":\"3\",\"userAddress\":\"0x175E72C131BEBE80C6eD776B2eb6363De96ff4E8\",\"paymentIdentifier\":2,\"moveHash\":\"0x1d91856822a1fc01adbb4d3bd784790221a5eaf60b5d969cebda52be5860bff4\",\"timestamp\":\"2019-06-21T05:15:25.726Z\",\"_id\":2}",
       "3": "{\"playerId\":\"1\",\"gameId\":\"4\",\"userAddress\":\"0x175E72C131BEBE80C6eD776B2eb6363De96ff4E8\",\"paymentIdentifier\":3,\"moveHash\":\"0x7bfa030b71fc1728a8674d3280b5c55c4b981c7a3399ae2dfdfa8307cb2221be\",\"timestamp\":\"2019-06-21T05:15:25.726Z\",\"_id\":3}",
       "4": "{\"playerId\":\"1\",\"gameId\":\"5\",\"userAddress\":\"0x175E72C131BEBE80C6eD776B2eb6363De96ff4E8\",\"paymentIdentifier\":4,\"moveHash\":\"0x89ea571152933962f98631a37bee0c5092ea3134c8dbe1c3e9d8f2bcbf5e1cac\",\"timestamp\":\"2019-06-21T05:15:25.726Z\",\"_id\":4}",
-      "5": "{\"playerId\":\"1\",\"gameId\":\"6\",\"userAddress\":\"0x175E72C131BEBE80C6eD776B
+      "5": "{\"playerId\":\"1\",\"gameId\":\"6\",\"userAddress\":\"0x175E72C131BEBE80C6eD776B2eb6363De96ff4E8\",\"paymentIdentifier\":5,\"moveHash\":\"0x31e37ab5f045b90d8c
