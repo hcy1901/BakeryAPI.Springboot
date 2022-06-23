@@ -3,4 +3,6 @@ const application = require('./dist');
 module.exports = application;
 
 if (require.main === module) {
-  // R
+  // Run the application
+  application.main().catch(err => {
+    console.error('Cannot start the appl
