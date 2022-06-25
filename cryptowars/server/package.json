@@ -2,4 +2,9 @@
   "name": "cryptowars",
   "version": "1.0.0",
   "description": "cryptowars",
-  "keywords":
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "index.js",
+  "e
