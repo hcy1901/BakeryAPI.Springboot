@@ -7,4 +7,9 @@
     "loopback"
   ],
   "main": "index.js",
-  "e
+  "engines": {
+    "node": ">=8.9"
+  },
+  "scripts": {
+    "build:apidocs": "lb-apidocs",
+  
