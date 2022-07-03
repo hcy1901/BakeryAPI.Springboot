@@ -23,4 +23,6 @@
     "tslint": "lb-tslint",
     "tslint:fix": "npm run tslint -- --fix",
     "pretest": "npm run clean && npm run build",
-   
+    "test": "lb-mocha --allow-console-logs \"dist/test\"",
+    "posttest": "npm run lint",
+ 
