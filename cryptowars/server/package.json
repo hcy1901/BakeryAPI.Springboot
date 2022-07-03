@@ -25,4 +25,5 @@
     "pretest": "npm run clean && npm run build",
     "test": "lb-mocha --allow-console-logs \"dist/test\"",
     "posttest": "npm run lint",
- 
+    "test:dev": "lb-mocha --allow-console-logs dist/test/**/*.js && npm run posttest",
+    "pr
