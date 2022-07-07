@@ -33,3 +33,8 @@
   "repository": {
     "type": "git"
   },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "index.js",
