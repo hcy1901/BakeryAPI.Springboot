@@ -43,4 +43,7 @@
     "dist/index*",
     "src"
   ],
-  "depen
+  "dependencies": {
+    "@loopback/boot": "^1.0.1",
+    "@loopback/context": "^1.0.0",
+    "@loop
