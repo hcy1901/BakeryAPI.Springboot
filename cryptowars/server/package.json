@@ -48,4 +48,6 @@
     "@loopback/context": "^1.0.0",
     "@loopback/core": "^1.0.0",
     "@loopback/openapi-v3": "^1.0.1",
-    "@loopback
+    "@loopback/repository": "^1.0.1",
+    "@loopback/rest": "^1.0.1",
+    "@loopback/serv
