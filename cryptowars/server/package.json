@@ -50,4 +50,6 @@
     "@loopback/openapi-v3": "^1.0.1",
     "@loopback/repository": "^1.0.1",
     "@loopback/rest": "^1.0.1",
-    "@loopback/serv
+    "@loopback/service-proxy": "^1.0.3",
+    "loopback-connector-rest": "^3.4.1",
+    "memory":
