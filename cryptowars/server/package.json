@@ -52,4 +52,8 @@
     "@loopback/rest": "^1.0.1",
     "@loopback/service-proxy": "^1.0.3",
     "loopback-connector-rest": "^3.4.1",
-    "memory":
+    "memory": "0.0.3",
+    "web3-utils": "^1.0.0-beta.36"
+  },
+  "devDependencies": {
+    "@l
