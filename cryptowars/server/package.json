@@ -56,4 +56,6 @@
     "web3-utils": "^1.0.0-beta.36"
   },
   "devDependencies": {
-    "@l
+    "@loopback/build": "^1.0.0",
+    "@loopback/testlab": "^1.0.0",
+    "@types/node": "^10.11.2
