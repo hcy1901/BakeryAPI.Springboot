@@ -58,4 +58,6 @@
   "devDependencies": {
     "@loopback/build": "^1.0.0",
     "@loopback/testlab": "^1.0.0",
-    "@types/node": "^10.11.2
+    "@types/node": "^10.11.2"
+  }
+}
