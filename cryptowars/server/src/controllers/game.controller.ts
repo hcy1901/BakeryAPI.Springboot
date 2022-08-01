@@ -19,4 +19,7 @@ import {Context} from '@loopback/context';
 import {Game, Move} from '../models';
 import {GameRepository} from '../repositories';
 import {MoveController} from './move.controller';
-import
+import {Raiden} from './raiden.controller';
+import {RaidenDataSource} from '../datasources';
+
+import {Roc
