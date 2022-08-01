@@ -16,4 +16,5 @@ import {
   requestBody,
 } from '@loopback/rest';
 import {Context} from '@loopback/context';
-import {Ga
+import {Game, Move} from '../models';
+import {GameRepository} from '../repo
