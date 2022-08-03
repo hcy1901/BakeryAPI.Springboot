@@ -25,4 +25,6 @@ import {RaidenDataSource} from '../datasources';
 import {RockPaperScissorsGetWinner, RockPaperScissorsGetLoser} from '../rpsWinner';
 
 export class GameController {
-  c
+  constructor(
+    @repository(GameRepository)
+    public gameRepository : GameRepository,
