@@ -22,4 +22,7 @@ import {MoveController} from './move.controller';
 import {Raiden} from './raiden.controller';
 import {RaidenDataSource} from '../datasources';
 
-import {Roc
+import {RockPaperScissorsGetWinner, RockPaperScissorsGetLoser} from '../rpsWinner';
+
+export class GameController {
+  c
