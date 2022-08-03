@@ -28,3 +28,9 @@ export class GameController {
   constructor(
     @repository(GameRepository)
     public gameRepository : GameRepository,
+  ) {}
+
+  @post('/game', {
+    responses: {
+      '200': {
+        descript
