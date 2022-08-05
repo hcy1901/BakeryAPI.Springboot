@@ -34,4 +34,8 @@ export class GameController {
     responses: {
       '200': {
         description: 'Game model instance',
-        content: {'application/json': 
+        content: {'application/json': {schema: {'x-ts-type': Game}}},
+      },
+    },
+  })
+  async create(@requestBody() game: Ga
