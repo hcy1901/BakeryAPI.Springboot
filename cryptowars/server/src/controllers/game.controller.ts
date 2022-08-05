@@ -33,4 +33,5 @@ export class GameController {
   @post('/game', {
     responses: {
       '200': {
-        descript
+        description: 'Game model instance',
+        content: {'application/json': 
