@@ -38,4 +38,6 @@ export class GameController {
       },
     },
   })
-  async create(@requestBody() game: Ga
+  async create(@requestBody() game: Game): Promise<Game> {
+    game.startTime = new Date();
+    return
