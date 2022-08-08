@@ -44,4 +44,7 @@ export class GameController {
   }
 
   @get('/game/count', {
-    responses: 
+    responses: {
+      '200': {
+        description: 'Game model count',
+        content: {'application/json
