@@ -40,4 +40,8 @@ export class GameController {
   })
   async create(@requestBody() game: Game): Promise<Game> {
     game.startTime = new Date();
-    return
+    return await this.gameRepository.create(game);
+  }
+
+  @get('/game/count', {
+    responses: 
