@@ -47,4 +47,9 @@ export class GameController {
     responses: {
       '200': {
         description: 'Game model count',
-        content: {'application/json
+        content: {'application/json': {schema: CountSchema}},
+      },
+    },
+  })
+  async count(
+    @par
