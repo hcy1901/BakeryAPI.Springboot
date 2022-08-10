@@ -54,4 +54,8 @@ export class GameController {
   async count(
     @param.query.object('where', getWhereSchemaFor(Game)) where?: Where,
   ): Promise<Count> {
-   
+    return await this.gameRepository.count(where);
+  }
+
+  @get('/game', {
+    respo
