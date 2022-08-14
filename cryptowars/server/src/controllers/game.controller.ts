@@ -58,4 +58,7 @@ export class GameController {
   }
 
   @get('/game', {
-    respo
+    responses: {
+      '200': {
+        description: 'Array of Game model instances',
+        con
