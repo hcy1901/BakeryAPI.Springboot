@@ -61,4 +61,6 @@ export class GameController {
     responses: {
       '200': {
         description: 'Array of Game model instances',
-        con
+        content: {
+          'application/json': {
+            schema: {type: 'array', items: {'x-ts-type': 
