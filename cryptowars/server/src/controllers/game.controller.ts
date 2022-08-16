@@ -63,4 +63,11 @@ export class GameController {
         description: 'Array of Game model instances',
         content: {
           'application/json': {
-            schema: {type: 'array', items: {'x-ts-type': 
+            schema: {type: 'array', items: {'x-ts-type': Game}},
+          },
+        },
+      },
+    },
+  })
+  async find(
+    @param.que
