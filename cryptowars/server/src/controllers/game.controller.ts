@@ -70,4 +70,6 @@ export class GameController {
     },
   })
   async find(
-    @param.que
+    @param.query.object('filter', getFilterSchemaFor(Game)) filter?: Filter,
+  ): Promise<Game[]> {
+    return await this
