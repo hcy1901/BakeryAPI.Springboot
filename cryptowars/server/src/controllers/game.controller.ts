@@ -72,4 +72,9 @@ export class GameController {
   async find(
     @param.query.object('filter', getFilterSchemaFor(Game)) filter?: Filter,
   ): Promise<Game[]> {
-    return await this
+    return await this.gameRepository.find(filter);
+  }
+
+  @patch('/game', {
+    responses: {
+ 
