@@ -77,4 +77,6 @@ export class GameController {
 
   @patch('/game', {
     responses: {
- 
+      '200': {
+        description: 'Game PATCH success count',
+        content: {'
