@@ -84,4 +84,5 @@ export class GameController {
     },
   })
   async updateAll(
-    @requ
+    @requestBody() game: Game,
+    @param.query.object('where', getWhereSch
