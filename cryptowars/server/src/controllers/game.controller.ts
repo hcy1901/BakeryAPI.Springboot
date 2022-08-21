@@ -85,4 +85,6 @@ export class GameController {
   })
   async updateAll(
     @requestBody() game: Game,
-    @param.query.object('where', getWhereSch
+    @param.query.object('where', getWhereSchemaFor(Game)) where?: Where,
+  ): Promise<Count> {
+    return await this.gameRep
