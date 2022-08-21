@@ -79,4 +79,9 @@ export class GameController {
     responses: {
       '200': {
         description: 'Game PATCH success count',
-        content: {'
+        content: {'application/json': {schema: CountSchema}},
+      },
+    },
+  })
+  async updateAll(
+    @requ
