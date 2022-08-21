@@ -87,4 +87,8 @@ export class GameController {
     @requestBody() game: Game,
     @param.query.object('where', getWhereSchemaFor(Game)) where?: Where,
   ): Promise<Count> {
-    return await this.gameRep
+    return await this.gameRepository.updateAll(game, where);
+  }
+
+  @get('/game/{id}', {
+    responses:
