@@ -91,4 +91,7 @@ export class GameController {
   }
 
   @get('/game/{id}', {
-    responses:
+    responses: {
+      '200': {
+        description: 'Game model instance',
+        content: {'applicat
