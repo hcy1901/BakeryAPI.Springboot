@@ -94,4 +94,8 @@ export class GameController {
     responses: {
       '200': {
         description: 'Game model instance',
-        content: {'applicat
+        content: {'application/json': {schema: {'x-ts-type': Game}}},
+      },
+    },
+  })
+  async findById(@para
