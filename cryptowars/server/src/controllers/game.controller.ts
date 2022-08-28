@@ -98,4 +98,5 @@ export class GameController {
       },
     },
   })
-  async findById(@para
+  async findById(@param.path.string('id') id: string): Promise<Game> {
+    // Check if date is > afte
