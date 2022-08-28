@@ -99,4 +99,5 @@ export class GameController {
     },
   })
   async findById(@param.path.string('id') id: string): Promise<Game> {
-    // Check if date is > afte
+    // Check if date is > after resolution time
+    // get all game moves sorted -> calculate entire amoun
