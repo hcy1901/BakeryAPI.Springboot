@@ -102,4 +102,4 @@ export class GameController {
     // Check if date is > after resolution time
     // get all game moves sorted -> calculate entire amount received by the game
     // calculate winning move -> count all the winners -> get amount of guardian ->  amount/winner
-    // connect to G
+    // connect to Guardian Raiden node -> get all game payments by payment identifiers (identifier > x
