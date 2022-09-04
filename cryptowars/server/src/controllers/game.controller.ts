@@ -108,4 +108,5 @@ export class GameController {
     let game: Game;
     let currentTime, resolveTime;
     let moves: Move[], winningMoves: Move[] = [];
-    let
+    let moveController;
+    let total_amount: number = 0, winner_amount: number, guardian_amount: numb
