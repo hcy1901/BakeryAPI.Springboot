@@ -106,3 +106,6 @@ export class GameController {
     // calculate
     // send Raiden payments to all winners
     let game: Game;
+    let currentTime, resolveTime;
+    let moves: Move[], winningMoves: Move[] = [];
+    let
