@@ -114,3 +114,8 @@ export class GameController {
         '1': {
             rock: 0,
             paper: 0,
+            scissors: 0,
+        },
+        '2': {
+            rock: 0,
+            p
