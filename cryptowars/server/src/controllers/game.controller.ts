@@ -122,4 +122,5 @@ export class GameController {
             scissors: 0,
         }
     };
-    let sorted_moves_1: any = [
+    let sorted_moves_1: any = [], sorted_moves_2: any = [];
+    let winningMove: string, move1: string, move2: st
