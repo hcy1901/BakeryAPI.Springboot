@@ -118,4 +118,8 @@ export class GameController {
         },
         '2': {
             rock: 0,
-            p
+            paper: 0,
+            scissors: 0,
+        }
+    };
+    let sorted_moves_1: any = [
