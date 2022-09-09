@@ -125,4 +125,7 @@ export class GameController {
     let sorted_moves_1: any = [], sorted_moves_2: any = [];
     let winningMove: string, move1: string, move2: string;
     let gameUpdate: Partial<Game>;
-    let raidenPayment: any, rai
+    let raidenPayment: any, raidenPayments: any;
+
+    // TODO - token should be in the move model
+    const token = '0xc
