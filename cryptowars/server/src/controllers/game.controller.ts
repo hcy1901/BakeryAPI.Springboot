@@ -130,4 +130,6 @@ export class GameController {
     // TODO - token should be in the move model
     const token = '0xc778417E063141139Fce010982780140Aa0cD5Ab';
 
-    game = await this.gameRepository.f
+    game = await this.gameRepository.findById(id);
+    currentTime = new Date().getTime();
+    resolveTime = game
