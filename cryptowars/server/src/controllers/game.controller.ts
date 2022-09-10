@@ -132,4 +132,6 @@ export class GameController {
 
     game = await this.gameRepository.findById(id);
     currentTime = new Date().getTime();
-    resolveTime = game
+    resolveTime = game.startTime.getTime() + game.gameTime + game.resolveTime;
+
+    if (game.winningMove || game.inProgress || curren
