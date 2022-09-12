@@ -134,4 +134,8 @@ export class GameController {
     currentTime = new Date().getTime();
     resolveTime = game.startTime.getTime() + game.gameTime + game.resolveTime;
 
-    if (game.winningMove || game.inProgress || curren
+    if (game.winningMove || game.inProgress || currentTime < resolveTime) {
+        return game;
+    }
+
+    moveController = new MoveController(await 
