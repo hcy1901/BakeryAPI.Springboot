@@ -143,4 +143,8 @@ export class GameController {
     // There should be a single move for a game
     moves = await moveController.find({where: {gameId: id}, order: ["_id ASC"]});
 
-    if (moves.length
+    if (moves.length == 0) {
+        return game;
+    }
+
+    raidenPayments = await this.getRaidenPayment
