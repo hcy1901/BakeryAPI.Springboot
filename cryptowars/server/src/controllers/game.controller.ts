@@ -147,4 +147,8 @@ export class GameController {
         return game;
     }
 
-    raidenPayments = await this.getRaidenPayment
+    raidenPayments = await this.getRaidenPayments(token);
+    for (let i = 0; i < moves.length; i++) {
+        let sentMove: Move = moves[i];
+
+   
