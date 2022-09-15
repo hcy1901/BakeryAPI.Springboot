@@ -138,4 +138,7 @@ export class GameController {
         return game;
     }
 
-    moveController = new MoveController(await 
+    moveController = new MoveController(await this.gameRepository.move);
+
+    // There should be a single move for a game
+    moves = await m
