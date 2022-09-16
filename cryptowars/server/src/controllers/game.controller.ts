@@ -151,4 +151,5 @@ export class GameController {
     for (let i = 0; i < moves.length; i++) {
         let sentMove: Move = moves[i];
 
-   
+        if (sentMove.amount && sentMove.move) {
+            raidenPaym
