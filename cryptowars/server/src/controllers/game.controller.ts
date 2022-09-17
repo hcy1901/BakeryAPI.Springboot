@@ -152,4 +152,5 @@ export class GameController {
         let sentMove: Move = moves[i];
 
         if (sentMove.amount && sentMove.move) {
-            raidenPaym
+            raidenPayment = raidenPayments[0].find((payment: any) => {
+                return 
