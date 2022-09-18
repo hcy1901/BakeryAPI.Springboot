@@ -153,4 +153,6 @@ export class GameController {
 
         if (sentMove.amount && sentMove.move) {
             raidenPayment = raidenPayments[0].find((payment: any) => {
-                return 
+                return payment.identifier === sentMove.paymentIdentifier;
+            });
+         
