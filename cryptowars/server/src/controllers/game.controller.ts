@@ -155,4 +155,6 @@ export class GameController {
             raidenPayment = raidenPayments[0].find((payment: any) => {
                 return payment.identifier === sentMove.paymentIdentifier;
             });
-         
+            console.log('raidenPayment', raidenPayment);
+            if (raidenPayment) {
+  
