@@ -158,4 +158,8 @@ export class GameController {
             console.log('raidenPayment', raidenPayment);
             if (raidenPayment) {
                 total_amount += sentMove.amount;
-                move_count[sentMove.playerId][sentMove.move] += 1
+                move_count[sentMove.playerId][sentMove.move] += 1;
+                winningMoves.push(sentMove);
+            }
+        }
+    }
