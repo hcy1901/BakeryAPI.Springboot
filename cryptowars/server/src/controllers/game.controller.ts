@@ -163,3 +163,5 @@ export class GameController {
             }
         }
     }
+    console.log('total_amount', total_amount);
+    console.log('move_count', move_count);
