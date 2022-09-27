@@ -165,4 +165,7 @@ export class GameController {
     }
     console.log('total_amount', total_amount);
     console.log('move_count', move_count);
-    sorted_moves_1 = Object.entries(move_count['1']).sort((a: any, b: any) 
+    sorted_moves_1 = Object.entries(move_count['1']).sort((a: any, b: any) => {
+        return a[1] - b[1];
+    });
+    sorted_moves_2 = Object.entries(move_count['
