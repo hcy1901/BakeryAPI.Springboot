@@ -171,4 +171,5 @@ export class GameController {
     sorted_moves_2 = Object.entries(move_count['2']).sort((a: any, b: any) => {
         return a[1] - b[1];
     });
-    consol
+    console.log('sorted_moves_1', sorted_moves_1);
+    console.log('sorted_moves_2', sorted_moves
