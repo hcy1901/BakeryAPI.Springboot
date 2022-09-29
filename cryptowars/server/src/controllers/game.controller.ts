@@ -172,4 +172,7 @@ export class GameController {
         return a[1] - b[1];
     });
     console.log('sorted_moves_1', sorted_moves_1);
-    console.log('sorted_moves_2', sorted_moves
+    console.log('sorted_moves_2', sorted_moves_2);
+
+    move1 = sorted_moves_1[2][1] > 0 ? sorted_moves_1[2][0] : null;
+    move2 = s
