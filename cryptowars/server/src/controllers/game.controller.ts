@@ -175,4 +175,4 @@ export class GameController {
     console.log('sorted_moves_2', sorted_moves_2);
 
     move1 = sorted_moves_1[2][1] > 0 ? sorted_moves_1[2][0] : null;
-    move2 = s
+    move2 = sorted_moves_2[2][1] > 0 ? sorted_moves_2[2][0] : RockPaperScissorsGetLoser[mo
