@@ -181,4 +181,7 @@ export class GameController {
 
     guardian_amount = total_amount / 10;
     total_amount -= guardian_amount;
- 
+    winner_amount = total_amount / moves.length;
+
+    gameUpdate = {
+        winning
