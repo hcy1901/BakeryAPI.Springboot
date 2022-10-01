@@ -177,4 +177,8 @@ export class GameController {
     move1 = sorted_moves_1[2][1] > 0 ? sorted_moves_1[2][0] : null;
     move2 = sorted_moves_2[2][1] > 0 ? sorted_moves_2[2][0] : RockPaperScissorsGetLoser[move1];
 
-    winningMove = RockPaperScissorsGetLoser[move1] == move2 ? move1 : move2
+    winningMove = RockPaperScissorsGetLoser[move1] == move2 ? move1 : move2;
+
+    guardian_amount = total_amount / 10;
+    total_amount -= guardian_amount;
+ 
