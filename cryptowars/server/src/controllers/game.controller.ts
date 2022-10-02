@@ -184,4 +184,8 @@ export class GameController {
     winner_amount = total_amount / moves.length;
 
     gameUpdate = {
-        winning
+        winningMove,
+        move1,
+        move2,
+        amount: winner_amount,
+        playe
