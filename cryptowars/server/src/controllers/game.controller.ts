@@ -191,4 +191,7 @@ export class GameController {
         players: moves.length,
     };
     console.log('--gameUpdate', gameUpdate);
-    this
+    this.updateById(id, gameUpdate);
+
+    // Make Raiden payments to winners
+    winningMoves.forEac
