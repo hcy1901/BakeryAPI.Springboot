@@ -194,4 +194,5 @@ export class GameController {
     this.updateById(id, gameUpdate);
 
     // Make Raiden payments to winners
-    winningMoves.forEac
+    winningMoves.forEach((move: Move) => {
+        if (move.move && move.amount && move
