@@ -195,4 +195,5 @@ export class GameController {
 
     // Make Raiden payments to winners
     winningMoves.forEach((move: Move) => {
-        if (move.move && move.amount && move
+        if (move.move && move.amount && move.move === winningMove) {
+            this.sendRaidenPayment(token, move.userAddress, move.amoun
