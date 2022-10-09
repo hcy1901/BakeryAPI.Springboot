@@ -209,4 +209,8 @@ export class GameController {
         description: 'Game model instance',
         content: {'application/json': {schema: {'x-ts-type': Move}}},
       },
-  
+    },
+  })
+  async createMove(
+    @param.path.string('id') id: string,
+   
