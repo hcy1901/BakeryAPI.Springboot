@@ -203,4 +203,7 @@ export class GameController {
     return game;
   }
 
-  @post('/game
+  @post('/game/{id}/move', {
+    responses: {
+      '200': {
+        description: 'Game model 
