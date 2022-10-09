@@ -206,4 +206,7 @@ export class GameController {
   @post('/game/{id}/move', {
     responses: {
       '200': {
-        description: 'Game model 
+        description: 'Game model instance',
+        content: {'application/json': {schema: {'x-ts-type': Move}}},
+      },
+  
