@@ -213,4 +213,7 @@ export class GameController {
   })
   async createMove(
     @param.path.string('id') id: string,
-   
+    @requestBody() move: Move,
+  ): Promise<Move> {
+    let moveController, game;
+
