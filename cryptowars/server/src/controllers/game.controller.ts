@@ -217,3 +217,6 @@ export class GameController {
   ): Promise<Move> {
     let moveController, game;
 
+    moveController = new MoveController(await this.gameRepository.move);
+
+    game = this.
