@@ -219,4 +219,6 @@ export class GameController {
 
     moveController = new MoveController(await this.gameRepository.move);
 
-    game = this.
+    game = this.findById(id);
+    if (!game) {
+        throw new Error('No game found with this id
