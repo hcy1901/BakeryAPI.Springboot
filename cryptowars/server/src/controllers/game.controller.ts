@@ -221,4 +221,8 @@ export class GameController {
 
     game = this.findById(id);
     if (!game) {
-        throw new Error('No game found with this id
+        throw new Error('No game found with this id.');
+    }
+
+    move.gameId = id;
+    let count = await moveController.count
