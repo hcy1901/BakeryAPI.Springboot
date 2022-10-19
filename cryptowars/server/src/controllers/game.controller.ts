@@ -227,4 +227,9 @@ export class GameController {
     move.gameId = id;
     let count = await moveController.count();
     move.paymentIdentifier = count.count + 1;
-    console.log('m
+    console.log('move', move);
+    return await moveController.create(move);
+  }
+
+  @patch('/game/{id}', {
+  
