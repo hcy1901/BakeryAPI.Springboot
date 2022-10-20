@@ -232,4 +232,7 @@ export class GameController {
   }
 
   @patch('/game/{id}', {
-  
+    responses: {
+      '204': {
+        description: 'Game PATCH success',
+      },
