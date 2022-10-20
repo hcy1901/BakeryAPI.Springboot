@@ -236,3 +236,8 @@ export class GameController {
       '204': {
         description: 'Game PATCH success',
       },
+    },
+  })
+  async updateById(
+    @param.path.string('id') id: string,
+    @request
