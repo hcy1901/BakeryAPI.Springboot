@@ -248,4 +248,8 @@ export class GameController {
   @del('/game/{id}', {
     responses: {
       '204': {
-       
+        description: 'Game DELETE success',
+      },
+    },
+  })
+  async deleteById(@param.path.stri
