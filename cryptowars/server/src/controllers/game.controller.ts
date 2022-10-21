@@ -252,4 +252,6 @@ export class GameController {
       },
     },
   })
-  async deleteById(@param.path.stri
+  async deleteById(@param.path.string('id') id: string): Promise<void> {
+    await this.gameRepository.deleteById(id);
+  
