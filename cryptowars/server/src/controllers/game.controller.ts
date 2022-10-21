@@ -242,4 +242,10 @@ export class GameController {
     @param.path.string('id') id: string,
     @requestBody() game: Partial<Game>,
   ): Promise<void> {
-    await this.gameRepository.updateById(id
+    await this.gameRepository.updateById(id, game);
+  }
+
+  @del('/game/{id}', {
+    responses: {
+      '204': {
+       
