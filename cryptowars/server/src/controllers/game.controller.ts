@@ -240,4 +240,6 @@ export class GameController {
   })
   async updateById(
     @param.path.string('id') id: string,
-    @request
+    @requestBody() game: Partial<Game>,
+  ): Promise<void> {
+    await this.gameRepository.updateById(id
