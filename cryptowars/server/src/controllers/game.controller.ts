@@ -254,4 +254,7 @@ export class GameController {
   })
   async deleteById(@param.path.string('id') id: string): Promise<void> {
     await this.gameRepository.deleteById(id);
-  
+  }
+
+  async getRaidenPayments(token: string): Promise<any> {
+    const context: Con
