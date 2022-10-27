@@ -258,4 +258,6 @@ export class GameController {
 
   async getRaidenPayments(token: string): Promise<any> {
     const context: Context = new Context();
-    context.bind('datasources.raiden').to(Ra
+    context.bind('datasources.raiden').to(RaidenDataSource);
+    context.bind('controllers.Raiden').toClass(Raiden);
+    const raiden
