@@ -266,4 +266,5 @@ export class GameController {
     return await raiden.raiden.payments(token);
   }
 
-  async sendRaidenPayment(token: string, target:
+  async sendRaidenPayment(token: string, target: string, amount: number, identifier: number): Promise<any> {
+    const
