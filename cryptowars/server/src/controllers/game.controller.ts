@@ -263,4 +263,7 @@ export class GameController {
     const raiden = await context.get<Raiden>(
     'controllers.Raiden',
 );
-    return awa
+    return await raiden.raiden.payments(token);
+  }
+
+  async sendRaidenPayment(token: string, target:
