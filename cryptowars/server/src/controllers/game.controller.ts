@@ -270,4 +270,7 @@ export class GameController {
     const context: Context = new Context();
     context.bind('datasources.raiden').to(RaidenDataSource);
     context.bind('controllers.Raiden').toClass(Raiden);
-    const raiden =
+    const raiden = await context.get<Raiden>(
+    'controllers.Raiden',
+    );
+    return await 
