@@ -130,3 +130,4 @@ export class MoveController {
   async deleteById(@param.path.string('id') id: string): Promise<void> {
     await this.moveRepository.deleteById(id);
   }
+}
