@@ -3,4 +3,7 @@ import {juggler} from '@loopback/repository';
 import * as config from './db.datasource.json';
 
 export class DbDataSource extends juggler.DataSource {
-  static d
+  static dataSourceName = 'db';
+
+  constructor(
+    @inject('datasources.config.db', {optional: true})
