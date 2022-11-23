@@ -7,3 +7,8 @@ export class DbDataSource extends juggler.DataSource {
 
   constructor(
     @inject('datasources.config.db', {optional: true})
+    dsConfig: object = config,
+  ) {
+    super(dsConfig);
+  }
+}
