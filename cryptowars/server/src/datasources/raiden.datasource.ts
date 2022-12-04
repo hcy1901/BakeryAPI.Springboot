@@ -8,4 +8,10 @@ export const RaidenDataSource: juggler.DataSource = new juggler.DataSource({
   options: {
     headers: {
       accept: 'application/json',
-      'content-typ
+      'content-type': 'application/json',
+    },
+  },
+  operations: [
+    {
+      template: {
+     
