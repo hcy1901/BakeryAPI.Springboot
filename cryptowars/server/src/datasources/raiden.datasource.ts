@@ -16,4 +16,7 @@ export const RaidenDataSource: juggler.DataSource = new juggler.DataSource({
       template: {
         method: 'GET',
         url: `${RaidenHost}/api/v1/payments/{token}`,
-    
+        responsePath: '$',
+      },
+      functions: {
+        payments: 
