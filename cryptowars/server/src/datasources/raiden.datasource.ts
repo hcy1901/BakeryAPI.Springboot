@@ -19,4 +19,10 @@ export const RaidenDataSource: juggler.DataSource = new juggler.DataSource({
         responsePath: '$',
       },
       functions: {
-        payments: 
+        payments: ['token'],
+      },
+    },
+    {
+      template: {
+        method: 'POST',
+        ur
