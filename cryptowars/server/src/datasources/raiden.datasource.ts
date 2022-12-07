@@ -25,4 +25,6 @@ export const RaidenDataSource: juggler.DataSource = new juggler.DataSource({
     {
       template: {
         method: 'POST',
-        ur
+        url: `${RaidenHost}/api/v1/payments/{token}/{target}`,
+        body: {
+          amo
