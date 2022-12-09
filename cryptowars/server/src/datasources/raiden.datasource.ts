@@ -33,4 +33,8 @@ export const RaidenDataSource: juggler.DataSource = new juggler.DataSource({
         responsePath: '$',
       },
       functions: {
-        pay: ['token', 't
+        pay: ['token', 'target', 'amount', 'identifier'],
+      },
+    },
+  ],
+});
