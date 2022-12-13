@@ -9,4 +9,7 @@ export async function main(options: ApplicationConfig = {}) {
     cors: {
       origin: '*',
       methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-      prefligh
+      preflightContinue: false,
+      optionsSuccessStatus: 204,
+      maxAge: 86400,
+      credentials
