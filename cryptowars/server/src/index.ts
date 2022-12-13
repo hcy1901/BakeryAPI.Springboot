@@ -7,4 +7,6 @@ export async function main(options: ApplicationConfig = {}) {
   const app = new CryptowarsApplication(options);
   options.rest = {
     cors: {
-   
+      origin: '*',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+      prefligh
