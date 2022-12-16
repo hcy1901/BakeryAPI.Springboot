@@ -12,4 +12,10 @@ export async function main(options: ApplicationConfig = {}) {
       preflightContinue: false,
       optionsSuccessStatus: 204,
       maxAge: 86400,
-      credentials
+      credentials: true,
+    },
+  };
+  await app.boot();
+  await app.start();
+
+  con
