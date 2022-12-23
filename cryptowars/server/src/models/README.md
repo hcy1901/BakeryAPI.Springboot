@@ -1,3 +1,3 @@
 # Models
 
-This directory contains cod
+This directory contains code for models provided by this app.

@@ -1,0 +1,1 @@
+import {Entity, model, property, hasMany} from '@loopba
