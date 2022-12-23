@@ -7,3 +7,9 @@ export class Game extends Entity {
     type: 'string',
     id: true,
     generated: true,
+  })
+  _id: string;
+
+  @property({
+    type: 'number',
+    default: 20 * 1
