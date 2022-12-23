@@ -24,4 +24,9 @@ export class Game extends Entity {
 
   @property({
     type: 'date',
-    generated: t
+    generated: true,
+    default: new Date(),
+  })
+  startTime: Date;
+
+  @property({
