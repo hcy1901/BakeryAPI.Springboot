@@ -36,3 +36,10 @@ export class Game extends Entity {
 
   @property({
     type: 'string',
+  })
+  move1: string;
+
+  @property({
+    type: 'string',
+  })
+  move2: str
