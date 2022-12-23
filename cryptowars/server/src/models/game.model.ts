@@ -30,3 +30,9 @@ export class Game extends Entity {
   startTime: Date;
 
   @property({
+    type: 'string',
+  })
+  winningMove: string;
+
+  @property({
+    type: 'string',
