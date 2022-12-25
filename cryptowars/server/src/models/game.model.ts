@@ -42,4 +42,12 @@ export class Game extends Entity {
   @property({
     type: 'string',
   })
-  move2: str
+  move2: string;
+
+  @property({
+    type: 'number',
+  })
+  amount: number;
+
+  @property({
+  
