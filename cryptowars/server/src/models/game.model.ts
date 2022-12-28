@@ -50,4 +50,8 @@ export class Game extends Entity {
   amount: number;
 
   @property({
-  
+    type: 'number',
+  })
+  players: number;
+
+  @hasMany(() => Move, {keyTo: 'gam
