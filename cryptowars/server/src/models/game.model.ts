@@ -54,4 +54,9 @@ export class Game extends Entity {
   })
   players: number;
 
-  @hasMany(() => Move, {keyTo: 'gam
+  @hasMany(() => Move, {keyTo: 'gameId'})
+  moves?: Move[];
+
+  @property({
+    type: 'boolean',
+    default: 
