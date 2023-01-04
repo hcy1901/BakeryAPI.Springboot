@@ -64,4 +64,6 @@ export class Game extends Entity {
   inProgress: boolean;
 
   constructor(data?: Partial<Game>) {
-  
+    super(data);
+  }
+}
