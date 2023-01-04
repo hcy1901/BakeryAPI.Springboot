@@ -59,4 +59,9 @@ export class Game extends Entity {
 
   @property({
     type: 'boolean',
-    default: 
+    default: false,
+  })
+  inProgress: boolean;
+
+  constructor(data?: Partial<Game>) {
+  
