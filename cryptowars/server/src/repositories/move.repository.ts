@@ -3,4 +3,8 @@ import {Move} from '../models';
 import {inject} from '@loopback/core';
 
 
-export class MoveRepository ext
+export class MoveRepository extends DefaultCrudRepository<
+  Move,
+  typeof Move.prototype._id
+> {
+  constructor(
