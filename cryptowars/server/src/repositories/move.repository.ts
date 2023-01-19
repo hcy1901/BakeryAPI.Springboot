@@ -8,3 +8,5 @@ export class MoveRepository extends DefaultCrudRepository<
   typeof Move.prototype._id
 > {
   constructor(
+    @inject('datasources.db') protected datasource: juggler.DataSource,
+  ) {
