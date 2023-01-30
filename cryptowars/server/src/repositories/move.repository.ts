@@ -10,3 +10,6 @@ export class MoveRepository extends DefaultCrudRepository<
   constructor(
     @inject('datasources.db') protected datasource: juggler.DataSource,
   ) {
+    super(Move, datasource);
+  }
+}
