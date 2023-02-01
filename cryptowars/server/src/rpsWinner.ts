@@ -9,4 +9,10 @@ export const RockPaperScissorsGetLoser: RPSW = {
     scissors: 'paper',
 }
 
-export const RockPaperScissorsGetWinner: R
+export const RockPaperScissorsGetWinner: RPSW = {
+    rock: 'paper',
+    paper: 'scissors',
+    scissors: 'rock',
+}
+
+ex
