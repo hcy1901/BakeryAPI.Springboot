@@ -5,4 +5,8 @@ interface RPSW {
 
 export const RockPaperScissorsGetLoser: RPSW = {
     rock: 'scissors',
-    paper: 'ro
+    paper: 'rock',
+    scissors: 'paper',
+}
+
+export const RockPaperScissorsGetWinner: R
