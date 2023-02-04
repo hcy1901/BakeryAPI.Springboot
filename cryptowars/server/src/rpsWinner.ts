@@ -15,4 +15,5 @@ export const RockPaperScissorsGetWinner: RPSW = {
     scissors: 'rock',
 }
 
-ex
+export function getRandomWinner() {
+    const results: { [key: number]: string }
