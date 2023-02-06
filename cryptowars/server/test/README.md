@@ -1,3 +1,3 @@
 # Tests
 
-Please place your 
+Please place your tests in this folder.
