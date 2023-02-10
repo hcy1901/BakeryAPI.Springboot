@@ -4,4 +4,7 @@ import {setupApplication} from './test-helper';
 
 describe('PingController', () => {
   let app: CryptowarsApplication;
-  let client
+  let client: Client;
+
+  before('setupApplication', async () => {
+    ({app, client} = await s
