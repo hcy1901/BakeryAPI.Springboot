@@ -7,4 +7,9 @@ describe('PingController', () => {
   let client: Client;
 
   before('setupApplication', async () => {
-    ({app, client} = await s
+    ({app, client} = await setupApplication());
+  });
+
+  after(async () => {
+    await app.stop();
+  
