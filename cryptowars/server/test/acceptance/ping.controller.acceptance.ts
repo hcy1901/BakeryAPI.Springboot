@@ -12,4 +12,7 @@ describe('PingController', () => {
 
   after(async () => {
     await app.stop();
-  
+  });
+
+  it('invokes GET /ping', async () => {
+    const res = await client.
