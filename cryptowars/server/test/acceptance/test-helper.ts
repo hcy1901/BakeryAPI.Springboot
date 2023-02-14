@@ -1,0 +1,2 @@
+import {CryptowarsApplication} from '../..';
+import
