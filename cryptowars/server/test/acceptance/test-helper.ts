@@ -6,4 +6,8 @@ import {
 } from '@loopback/testlab';
 
 export async function setupApplication(): Promise<AppWithClient> {
-  const app = new Cryptow
+  const app = new CryptowarsApplication({
+    rest: givenHttpServerConfig(),
+  });
+
+  await app.boot()
