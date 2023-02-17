@@ -10,4 +10,10 @@ export async function setupApplication(): Promise<AppWithClient> {
     rest: givenHttpServerConfig(),
   });
 
-  await app.boot()
+  await app.boot();
+  await app.start();
+
+  const client = createRestAppClient(app);
+
+  return {app, client};
+}
