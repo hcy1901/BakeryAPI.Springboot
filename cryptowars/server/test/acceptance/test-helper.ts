@@ -5,4 +5,5 @@ import {
   Client,
 } from '@loopback/testlab';
 
-expo
+export async function setupApplication(): Promise<AppWithClient> {
+  const app = new Cryptow
