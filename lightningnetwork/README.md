@@ -1,3 +1,5 @@
 ## Lightning Network
 
-### Wo
+### Workshop prerequisites
+
+* Setup [docker compose](https://docs.docker.com/compose/install/#ins
