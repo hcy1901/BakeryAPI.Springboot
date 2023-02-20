@@ -17,3 +17,8 @@ export async function setupApplication(): Promise<AppWithClient> {
 
   return {app, client};
 }
+
+export interface AppWithClient {
+  app: CryptowarsApplication;
+  client: Client;
+}
