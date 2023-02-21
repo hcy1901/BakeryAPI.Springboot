@@ -8,4 +8,12 @@
 
 ### Using docker:
 
-Start the Lightning node and Bitcoin node using doc
+Start the Lightning node and Bitcoin node using docker compose:
+
+```
+    $ cd docker
+    $ docker-compose up
+
+```
+
+Access the docker node usi
