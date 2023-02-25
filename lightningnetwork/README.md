@@ -19,4 +19,9 @@ Start the Lightning node and Bitcoin node using docker compose:
 Access the docker node using the following command:
 
 ```
-docker exec -it docker_lnd_1 lncli --rpcserver=localh
+docker exec -it docker_lnd_1 lncli --rpcserver=localhost:10001 --no-macaroons getinfo
+```
+
+### LN commands 
+
+#### Wallet commands
