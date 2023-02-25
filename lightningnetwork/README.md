@@ -25,3 +25,10 @@ docker exec -it docker_lnd_1 lncli --rpcserver=localhost:10001 --no-macaroons ge
 ### LN commands 
 
 #### Wallet commands
+
+```
+lncli create
+lncli unlock
+lncli walletbalance
+lncli newaddress np2wkh
+``
