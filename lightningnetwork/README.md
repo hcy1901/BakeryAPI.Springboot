@@ -31,4 +31,9 @@ lncli create
 lncli unlock
 lncli walletbalance
 lncli newaddress np2wkh
-``
+```
+
+#### Connection commands
+
+```
+lncli connect 0321b65142d02e6d5eba23d5ce57017dab7b0239993c
