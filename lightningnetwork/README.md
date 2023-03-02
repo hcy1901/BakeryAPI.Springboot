@@ -39,4 +39,11 @@ lncli newaddress np2wkh
 lncli connect 0321b65142d02e6d5eba23d5ce57017dab7b0239993cd0bb099644c1a0f99c4943@localhost:10014
 lncli listpeers
 
-lncli openchannel --node_key=0321b65142d02e6d5eba23d5ce57017dab7b0239993cd0bb099644c1a0f99c4943 --local_am
+lncli openchannel --node_key=0321b65142d02e6d5eba23d5ce57017dab7b0239993cd0bb099644c1a0f99c4943 --local_amt=1000000
+lncli listchannels
+```
+
+#### Transaction commands
+
+```
+lncli addinvoice 
