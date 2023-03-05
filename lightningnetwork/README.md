@@ -51,4 +51,6 @@ lncli sendpayment --pay_req=lnsb100u1pwxrx5upp5fksumls4k8cwaza9yt00qqd3k8eerx6ff
 ```
 
 
-### Connecting t
+### Connecting to Lightning node (Web client)
+
+Follow this tutorial: https://dev.lightning.com
