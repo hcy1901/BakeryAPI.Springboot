@@ -47,4 +47,8 @@ lncli listchannels
 
 ```
 lncli addinvoice --amt=10000
-lncli sendpayment --pay_req=lnsb100u1pwxrx5upp5fksumls4k8cwaza9yt00qqd3k8eerx6ffdzalck3hsqwnkqsflnqdqqcqzys907tgz9gxg8y272vpck3emx4n3zgk8vu96zvu
+lncli sendpayment --pay_req=lnsb100u1pwxrx5upp5fksumls4k8cwaza9yt00qqd3k8eerx6ffdzalck3hsqwnkqsflnqdqqcqzys907tgz9gxg8y272vpck3emx4n3zgk8vu96zvujtkftgmrh4pd9r8uegr0eu5n4lllyvdmhad3n6uj3h5uv93qep6x3qu7r8dfefya0sq45aean
+```
+
+
+### Connecting t
