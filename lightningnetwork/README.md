@@ -47,4 +47,4 @@ lncli listchannels
 
 ```
 lncli addinvoice --amt=10000
-lncli sendpayment --pay_req=lnsb100u1pwxrx5upp5fksumls4k8cwaza9yt00qqd
+lncli sendpayment --pay_req=lnsb100u1pwxrx5upp5fksumls4k8cwaza9yt00qqd3k8eerx6ffdzalck3hsqwnkqsflnqdqqcqzys907tgz9gxg8y272vpck3emx4n3zgk8vu96zvu
