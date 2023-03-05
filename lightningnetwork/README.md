@@ -46,4 +46,5 @@ lncli listchannels
 #### Transaction commands
 
 ```
-lncli addinvoice 
+lncli addinvoice --amt=10000
+lncli sendpayment --pay_req=lnsb100u1pwxrx5upp5fksumls4k8cwaza9yt00qqd
