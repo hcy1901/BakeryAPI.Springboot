@@ -59,4 +59,6 @@ Follow this tutorial: https://dev.lightning.community/tutorial/02-web-client/ind
 
 
 
-### Basic LApp (Django app
+### Basic LApp (Django app)
+
+Follow this tutorial: https://dev.lightning.community/tutorial/03-rpc-client/in
