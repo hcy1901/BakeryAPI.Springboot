@@ -4,4 +4,7 @@
 
 * Install python>=3.7
 
-* Install the Ethereum
+* Install the Ethereum client (Geth)
+
+    ```
+        sudo add-apt-repository -y ppa:ethereum/et
