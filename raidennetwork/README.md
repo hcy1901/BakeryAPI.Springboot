@@ -11,4 +11,10 @@
         sudo apt-get update
         sudo apt-get install ethereum
     ```
-* Create an 
+* Create an Ethereum account:
+    ```
+    geth --datadir node1/ account new
+    
+    ```  
+
+* I
