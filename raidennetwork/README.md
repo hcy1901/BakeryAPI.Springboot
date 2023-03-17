@@ -17,4 +17,6 @@
     
     ```  
 
-* I
+* Install MetaMask plugin for the browser (Firefox, Chrome, Opera)
+
+* Create 
