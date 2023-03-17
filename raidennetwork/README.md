@@ -7,4 +7,8 @@
 * Install the Ethereum client (Geth)
 
     ```
-        sudo add-apt-repository -y ppa:ethereum/et
+        sudo add-apt-repository -y ppa:ethereum/ethereum
+        sudo apt-get update
+        sudo apt-get install ethereum
+    ```
+* Create an 
