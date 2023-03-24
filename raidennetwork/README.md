@@ -21,4 +21,6 @@
 
 * Create an Ethereum account through MetaMask and point it to **Ropsten** network
 
-* Request E
+* Request Ethereum fund through [https://faucet.ropsten.be](https://faucet.ropsten.be)
+ 
+* Convert ETH to WETH using an 
