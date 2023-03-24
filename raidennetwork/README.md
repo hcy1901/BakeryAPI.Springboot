@@ -19,4 +19,6 @@
 
 * Install MetaMask plugin for the browser (Firefox, Chrome, Opera)
 
-* Create 
+* Create an Ethereum account through MetaMask and point it to **Ropsten** network
+
+* Request E
