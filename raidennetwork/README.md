@@ -23,4 +23,6 @@
 
 * Request Ethereum fund through [https://faucet.ropsten.be](https://faucet.ropsten.be)
  
-* Convert ETH to WETH using an 
+* Convert ETH to WETH using an exchange: [https://0x.org/portal/weth](https://0x.org/portal/weth)
+    
+* Create an account in [https
