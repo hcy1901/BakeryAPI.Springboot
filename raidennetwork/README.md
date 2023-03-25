@@ -25,4 +25,6 @@
  
 * Convert ETH to WETH using an exchange: [https://0x.org/portal/weth](https://0x.org/portal/weth)
     
-* Create an account in [https
+* Create an account in [https://infura.io](https://infura.io) to connect to an Ethereum full node
+
+### Raiden 
