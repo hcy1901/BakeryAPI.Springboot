@@ -27,4 +27,9 @@
     
 * Create an account in [https://infura.io](https://infura.io) to connect to an Ethereum full node
 
-### Raiden 
+### Raiden Network setup
+
+Install through PyPi (Make sure you are using python >=3.7)
+
+```
+pip install rai
