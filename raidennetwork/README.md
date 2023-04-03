@@ -32,4 +32,11 @@
 Install through PyPi (Make sure you are using python >=3.7)
 
 ```
-pip install rai
+pip install raiden
+
+```
+
+Start the Raiden client:
+
+```
+raiden --network-id ropsten --keystore-pat
