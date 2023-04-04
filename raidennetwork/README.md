@@ -39,4 +39,7 @@ pip install raiden
 Start the Raiden client:
 
 ```
-raiden --network-id ropsten --keystore-path  ~/.ethereum/testnet/keystore --eth-rpc-endpoint "https://ropsten.infura.io/v3/52df69ef00614e059a707918df501d90" --environment-type development --rpccorsdomain http://127.0.0.1:8
+raiden --network-id ropsten --keystore-path  ~/.ethereum/testnet/keystore --eth-rpc-endpoint "https://ropsten.infura.io/v3/52df69ef00614e059a707918df501d90" --environment-type development --rpccorsdomain http://127.0.0.1:8080,http://localhost:*/* --accept-disclaimer --api-address http://127.0.0.1:5001
+
+```
+
